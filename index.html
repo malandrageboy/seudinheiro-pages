@@ -27,6 +27,26 @@
           }
           menuWorking = !menuWorking
         })
+
+        var $window = $(window);
+        let smallWidth = false
+
+        function checkWidth() {
+            var windowsize = $window.width();
+            if (windowsize > 650) {
+              $('.menu').css('display', 'block')
+              smallWidth = false
+              menuWorking = true
+            } else {
+              if (!smallWidth) {
+                smallWidth = true
+                menuWorking = false
+                $('.menu').css('display', 'none')
+              }
+            }
+        }
+        checkWidth();
+        $(window).resize(checkWidth);
       })
     </script>
     <title>Seu Dinheiro</title>
