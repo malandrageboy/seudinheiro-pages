@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready( () => {
+        let menuWorking = false;
+        console.log('hello world')
+        $('.coins-button').on('click', () => {
+          console.log('a')
+          if (!menuWorking) {
+            $('.menu').css('display', 'block')
+            console.log('b')
+          } else {
+            $('.menu').css('display', 'none')
+            console.log('c')
+          }
+          menuWorking = !menuWorking
+        })
+      })
+    </script>
+    <title>Seu Dinheiro</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="brand">
+          <img src="assets/icon_seudinheiro.svg" alt="" srcset="" />
+          <span>Seu Dinheiro</span>
+        </div>
+        <img src="./assets/icon_hamburguer_menu.svg" class="coins-button" type="checkbox" />
+        <div class="pages">
+          <a href="#">Sobre nós</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu">
+        <h2>Converter</h2>
+        <div class="coins">
+          <div class="coins-list">
+            <h3>MOEDAS</h3>
+            <ul>
+              <li id="dolar"><a href="">Dólar</a></li>
+              <li id="euro"><a href="">Euro</a></li>
+              <li id="libra"><a href="">Libra</a></li>
+              <li id="iene"><a href="">Iene</a></li>
+            </ul>
+          </div>
+          <div class="coins-list">
+            <h3>CRIPTO</h3>
+            <ul>
+              <li id="bitcoin"><a href="">Bitcoin</a></li>
+              <li id="ethereum"><a href="">Ethereum</a></li>
+              <li id="litecoin"><a href="">Litecoin</a></li>
+              <li id="monero"><a href="">Monero</a></li>
+            </ul>
+          </div>
+        </div>
+        <div href="#" class="all-coins-button">
+          <img src="./assets/icon_list.svg" alt="" />
+          <span>Todas as Moedas</span>
+        </div>
+      </div>
+      <div class="main">
+        <div class="photo-banner">
+          <img src="./assets/profile_dolar.png" alt="" />
+        </div>
+        <div class="info">
+          <h1>Dólar</h1>
+          <div class="quotation">
+            <div class="coin">
+              <span>US$</span>
+              <span>1,00</span>
+            </div>
+            <span>vale</span>
+            <div class="coin">
+              <span>R$</span>
+              <span>5,40</span>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="time-updated">
+            <span>Última atualização: 16/11/2022 às 19h35</span>
+            <div class="line"></div>
+          </div>
+          <div class="history">
+            <h2>História</h2>
+            <p>
+              O dólar foi criado pelo governo norte-americano e, por isso, é
+              conhecido principalmente como a moeda oficial dos Estados Unidos,
+              no entanto, o dólar é também a moeda do Panamá, El Salvador e
+              Equador.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

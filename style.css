@@ -1,0 +1,312 @@
+/* gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+span,h1,h2,h3,p,li,a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #101210;
+}
+
+
+/* gerais */
+
+.menu-toggle:checked + .menu {
+  display : none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.main {
+  background: linear-gradient(157.92deg, #0B0D0B 12.03%, #161917 96.63%);
+  padding-bottom: 2rem;
+
+}
+
+.history {
+  padding: 0 2rem;
+}
+
+.history h2 {
+  color: #C2F2D2;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.history p {
+  color: #D9FFFE;
+}
+
+.time-updated span {
+  color: #758078;
+  font-size: 0.8rem;
+}
+
+.time-updated {
+  display: grid;
+  padding: 0 2rem;
+}
+
+.time-updated .line {
+  border-bottom: 2px solid #232523;
+}
+
+.quotation {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.quotation .line {
+  border-bottom: 2px solid #35BB55;
+  grid-column: 1 / -1;
+}
+
+.quotation .coin span:nth-child(1){
+  color: #9DA69F;
+  font-size: 100%;
+  cursor: default;
+}
+
+.quotation .coin span:nth-child(2){
+  color: #D9FFFE;
+  font-size: 100%;
+}
+
+.quotation .coin span:nth-child(2):hover {
+  background-color: hsl(120, 2%, 15%);
+  color: hsl(178, 30%, 60%);
+}
+
+.quotation span {
+  color: #35BB55;
+  font-size: 1.2rem;
+}
+
+.info {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.8rem;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.photo-banner {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #35BB55;
+  position: relative;
+  height: 146px;
+}
+
+.photo-banner img {
+  position: absolute;
+  background: #0F1310;
+  padding: 4px; 
+  border-radius: 100px;
+
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: -50px;
+  bottom: -50px;
+}
+
+.menu {
+  border-left: 2px solid #fff;
+  padding: 2rem;
+}
+
+.menu h2 {
+  font-weight: 600;
+  color: #67E591;
+  text-align: center;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #232523;
+}
+
+.coins {
+  margin-top: 1rem;
+  display:grid;
+  gap: 2rem;
+}
+.coins-list h3 {
+  font-size: 1.4rem;
+  color: #D9FFFE;
+  letter-spacing: 0.04rem;
+}
+
+.coins-list ul {
+  list-style: none;
+  margin-top: 0.2rem;
+  padding: 0 1rem;
+}
+
+.coins-list li {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.coins-list li a {
+  color:#D9FFFE;
+  padding-left: 1rem;
+}
+
+.coins-list a:hover {
+  color: hsl(0, 0%, 80%);
+}
+
+.coins-list li#dolar {
+  border-left: 4px solid #067329;
+}
+.coins-list li#euro {
+  border-left: 4px solid #F2F200;
+}
+.coins-list li#libra {
+  border-left: 4px solid #E73F47;
+}
+.coins-list li#iene {
+  border-left: 4px solid #A11819;
+}
+.coins-list li#bitcoin {
+  border-left: 4px solid #EA8C19;
+}
+.coins-list li#ethereum {
+  border-left: 4px solid #888888;
+}
+.coins-list li#litecoin {
+  border-left: 4px solid #BBB;
+}
+.coins-list li#monero {
+  border-left: 4px solid #FF6600;
+}
+
+.all-coins-button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.8rem;
+  align-items: center;
+  transition: .3s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.all-coins-button:hover {
+  background-color: #2E3332;
+}
+
+.all-coins-button {
+  font-weight: 700;
+}
+
+.header {
+  background-color: #101210;
+  padding: 0.8rem 0;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.brand img {
+  width: 25px;
+}
+
+.brand span{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.pages a {
+  font-size: 1.1rem;
+  color: #F2FFF6;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  border-left: 2px solid #4D4D4D;
+  padding-left: 1rem;
+  transition: 0.2s;
+}
+
+.pages a:hover {
+  border-left: 2px solid hsl(0, 0%, 60%);
+  color: #fff;
+}
+
+.coins-button {
+  display: none;
+}
+
+@media (width <= 650px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .coins {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coins-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main {
+    padding-bottom: 8rem;
+  }
+
+  .nav {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+  }
+
+  .coins-button:hover {
+    cursor: pointer;
+  }
+}
